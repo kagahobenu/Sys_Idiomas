@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Sistema</class>
+ <widget class="QMainWindow" name="Sistema">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1165</width>
+    <height>850</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1165</width>
+    <height>850</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1165</width>
+    <height>850</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QFrame" name="frame_2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 170, 0);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>1111</width>
+         <height>801</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QFrame" name="Barra_menus">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(85, 85, 127);</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="label">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>10</y>
+             <width>141</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:28pt; font-weight:700;&quot;&gt;MENUS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="Menu_Aluno">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>80</y>
+             <width>161</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>ALUNO</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="Menu_Professor">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>130</y>
+             <width>161</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>PROFESSORES</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="Menu_Turmas">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>180</y>
+             <width>161</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>TURMAS</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="Menu_Disciplina">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>220</y>
+             <width>161</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>DISCIPLINA</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="Menu_Usuarios">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>270</y>
+             <width>161</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>USUARIOS</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QStackedWidget" name="Paginas">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 170, 178);
+background-color: rgb(119, 91, 230);</string>
+          </property>
+          <property name="currentIndex">
+           <number>1</number>
+          </property>
+          <widget class="QWidget" name="Dashboard">
+           <widget class="QLabel" name="label_2">
+            <property name="geometry">
+             <rect>
+              <x>280</x>
+              <y>190</y>
+              <width>331</width>
+              <height>121</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>43</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>PG INICIAL</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="Alunos">
+           <widget class="QLabel" name="label_3">
+            <property name="geometry">
+             <rect>
+              <x>100</x>
+              <y>40</y>
+              <width>541</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>48</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:26pt; font-weight:700;&quot;&gt;ALUNOS - LISTAR&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+           <widget class="Line" name="line">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>100</y>
+              <width>881</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+           <widget class="QTableWidget" name="tableWidget">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>140</y>
+              <width>851</width>
+              <height>631</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(235, 235, 235);</string>
+            </property>
+            <column>
+             <property name="text">
+              <string>New Column</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Aluno</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Mat.</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>RG</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Turma</string>
+             </property>
+            </column>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="Alunos_Cadastrar">
+           <widget class="QLabel" name="label_7">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>30</y>
+              <width>541</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>48</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:26pt; font-weight:700;&quot;&gt;ALUNOS - LISTAR&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+           <widget class="Line" name="line_2">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>90</y>
+              <width>881</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="Alunos_Atualizar">
+           <widget class="QLabel" name="label_8">
+            <property name="geometry">
+             <rect>
+              <x>100</x>
+              <y>20</y>
+              <width>541</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>48</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:26pt; font-weight:700;&quot;&gt;ALUNOS - ATUALIZAR&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+           <widget class="Line" name="line_3">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>80</y>
+              <width>881</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="Professores">
+           <widget class="QLabel" name="label_4">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>200</y>
+              <width>561</width>
+              <height>121</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>43</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Professores Listar</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="Professores_Cadastrar"/>
+          <widget class="QWidget" name="Professores_Atualizar"/>
+          <widget class="QWidget" name="Turmas">
+           <widget class="QLabel" name="label_5">
+            <property name="geometry">
+             <rect>
+              <x>460</x>
+              <y>200</y>
+              <width>331</width>
+              <height>121</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>43</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Turmas</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="Disciplina">
+           <widget class="QLabel" name="label_6">
+            <property name="geometry">
+             <rect>
+              <x>220</x>
+              <y>280</y>
+              <width>331</width>
+              <height>121</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>43</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Disciplinas</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="Usuarios"/>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

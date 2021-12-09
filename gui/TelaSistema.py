@@ -1,0 +1,227 @@
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'TelaSistema.ui'
+##
+## Created by: Qt User Interface Compiler version 6.2.1
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QApplication, QFrame, QHBoxLayout, QHeaderView,
+    QLabel, QMainWindow, QPushButton, QSizePolicy,
+    QStackedWidget, QTableWidget, QTableWidgetItem, QVBoxLayout,
+    QWidget)
+
+class Ui_Sistema(object):
+    def setupUi(self, Sistema):
+        if not Sistema.objectName():
+            Sistema.setObjectName(u"Sistema")
+        Sistema.resize(1165, 850)
+        Sistema.setMinimumSize(QSize(1165, 850))
+        Sistema.setMaximumSize(QSize(1165, 850))
+        self.centralwidget = QWidget(Sistema)
+        self.centralwidget.setObjectName(u"centralwidget")
+        self.verticalLayout = QVBoxLayout(self.centralwidget)
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.frame_2 = QFrame(self.centralwidget)
+        self.frame_2.setObjectName(u"frame_2")
+        sizePolicy = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.frame_2.sizePolicy().hasHeightForWidth())
+        self.frame_2.setSizePolicy(sizePolicy)
+        self.frame_2.setStyleSheet(u"background-color: rgb(255, 170, 0);")
+        self.frame_2.setFrameShape(QFrame.StyledPanel)
+        self.frame_2.setFrameShadow(QFrame.Raised)
+        self.layoutWidget = QWidget(self.frame_2)
+        self.layoutWidget.setObjectName(u"layoutWidget")
+        self.layoutWidget.setGeometry(QRect(20, 20, 1111, 801))
+        self.horizontalLayout = QHBoxLayout(self.layoutWidget)
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.Barra_menus = QFrame(self.layoutWidget)
+        self.Barra_menus.setObjectName(u"Barra_menus")
+        sizePolicy1 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
+        sizePolicy1.setHorizontalStretch(0)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.Barra_menus.sizePolicy().hasHeightForWidth())
+        self.Barra_menus.setSizePolicy(sizePolicy1)
+        self.Barra_menus.setMinimumSize(QSize(200, 0))
+        self.Barra_menus.setMaximumSize(QSize(200, 16777215))
+        self.Barra_menus.setStyleSheet(u"background-color: rgb(85, 85, 127);")
+        self.Barra_menus.setFrameShape(QFrame.StyledPanel)
+        self.Barra_menus.setFrameShadow(QFrame.Raised)
+        self.label = QLabel(self.Barra_menus)
+        self.label.setObjectName(u"label")
+        self.label.setGeometry(QRect(30, 10, 141, 41))
+        self.Menu_Aluno = QPushButton(self.Barra_menus)
+        self.Menu_Aluno.setObjectName(u"Menu_Aluno")
+        self.Menu_Aluno.setGeometry(QRect(20, 80, 161, 41))
+        self.Menu_Aluno.setStyleSheet(u"")
+        self.Menu_Professor = QPushButton(self.Barra_menus)
+        self.Menu_Professor.setObjectName(u"Menu_Professor")
+        self.Menu_Professor.setGeometry(QRect(20, 130, 161, 41))
+        self.Menu_Turmas = QPushButton(self.Barra_menus)
+        self.Menu_Turmas.setObjectName(u"Menu_Turmas")
+        self.Menu_Turmas.setGeometry(QRect(20, 180, 161, 31))
+        self.Menu_Disciplina = QPushButton(self.Barra_menus)
+        self.Menu_Disciplina.setObjectName(u"Menu_Disciplina")
+        self.Menu_Disciplina.setGeometry(QRect(20, 220, 161, 31))
+        self.Menu_Usuarios = QPushButton(self.Barra_menus)
+        self.Menu_Usuarios.setObjectName(u"Menu_Usuarios")
+        self.Menu_Usuarios.setGeometry(QRect(20, 270, 161, 31))
+
+        self.horizontalLayout.addWidget(self.Barra_menus)
+
+        self.Paginas = QStackedWidget(self.layoutWidget)
+        self.Paginas.setObjectName(u"Paginas")
+        sizePolicy1.setHeightForWidth(self.Paginas.sizePolicy().hasHeightForWidth())
+        self.Paginas.setSizePolicy(sizePolicy1)
+        self.Paginas.setMinimumSize(QSize(200, 0))
+        self.Paginas.setStyleSheet(u"background-color: rgb(255, 170, 178);\n"
+"background-color: rgb(119, 91, 230);")
+        self.Dashboard = QWidget()
+        self.Dashboard.setObjectName(u"Dashboard")
+        self.label_2 = QLabel(self.Dashboard)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setGeometry(QRect(280, 190, 331, 121))
+        font = QFont()
+        font.setPointSize(43)
+        font.setBold(True)
+        self.label_2.setFont(font)
+        self.Paginas.addWidget(self.Dashboard)
+        self.Alunos = QWidget()
+        self.Alunos.setObjectName(u"Alunos")
+        self.label_3 = QLabel(self.Alunos)
+        self.label_3.setObjectName(u"label_3")
+        self.label_3.setGeometry(QRect(100, 40, 541, 51))
+        font1 = QFont()
+        font1.setPointSize(48)
+        self.label_3.setFont(font1)
+        self.line = QFrame(self.Alunos)
+        self.line.setObjectName(u"line")
+        self.line.setGeometry(QRect(10, 100, 881, 20))
+        self.line.setFrameShape(QFrame.HLine)
+        self.line.setFrameShadow(QFrame.Sunken)
+        self.tableWidget = QTableWidget(self.Alunos)
+        if (self.tableWidget.columnCount() < 5):
+            self.tableWidget.setColumnCount(5)
+        __qtablewidgetitem = QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(0, __qtablewidgetitem)
+        __qtablewidgetitem1 = QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(1, __qtablewidgetitem1)
+        __qtablewidgetitem2 = QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(2, __qtablewidgetitem2)
+        __qtablewidgetitem3 = QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(3, __qtablewidgetitem3)
+        __qtablewidgetitem4 = QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(4, __qtablewidgetitem4)
+        self.tableWidget.setObjectName(u"tableWidget")
+        self.tableWidget.setGeometry(QRect(30, 140, 851, 631))
+        self.tableWidget.setStyleSheet(u"background-color: rgb(235, 235, 235);")
+        self.Paginas.addWidget(self.Alunos)
+        self.Alunos_Cadastrar = QWidget()
+        self.Alunos_Cadastrar.setObjectName(u"Alunos_Cadastrar")
+        self.label_7 = QLabel(self.Alunos_Cadastrar)
+        self.label_7.setObjectName(u"label_7")
+        self.label_7.setGeometry(QRect(90, 30, 541, 51))
+        self.label_7.setFont(font1)
+        self.line_2 = QFrame(self.Alunos_Cadastrar)
+        self.line_2.setObjectName(u"line_2")
+        self.line_2.setGeometry(QRect(0, 90, 881, 20))
+        self.line_2.setFrameShape(QFrame.HLine)
+        self.line_2.setFrameShadow(QFrame.Sunken)
+        self.Paginas.addWidget(self.Alunos_Cadastrar)
+        self.Alunos_Atualizar = QWidget()
+        self.Alunos_Atualizar.setObjectName(u"Alunos_Atualizar")
+        self.label_8 = QLabel(self.Alunos_Atualizar)
+        self.label_8.setObjectName(u"label_8")
+        self.label_8.setGeometry(QRect(100, 20, 541, 51))
+        self.label_8.setFont(font1)
+        self.line_3 = QFrame(self.Alunos_Atualizar)
+        self.line_3.setObjectName(u"line_3")
+        self.line_3.setGeometry(QRect(10, 80, 881, 20))
+        self.line_3.setFrameShape(QFrame.HLine)
+        self.line_3.setFrameShadow(QFrame.Sunken)
+        self.Paginas.addWidget(self.Alunos_Atualizar)
+        self.Professores = QWidget()
+        self.Professores.setObjectName(u"Professores")
+        self.label_4 = QLabel(self.Professores)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setGeometry(QRect(80, 200, 561, 121))
+        self.label_4.setFont(font)
+        self.Paginas.addWidget(self.Professores)
+        self.Professores_Cadastrar = QWidget()
+        self.Professores_Cadastrar.setObjectName(u"Professores_Cadastrar")
+        self.Paginas.addWidget(self.Professores_Cadastrar)
+        self.Professores_Atualizar = QWidget()
+        self.Professores_Atualizar.setObjectName(u"Professores_Atualizar")
+        self.Paginas.addWidget(self.Professores_Atualizar)
+        self.Turmas = QWidget()
+        self.Turmas.setObjectName(u"Turmas")
+        self.label_5 = QLabel(self.Turmas)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setGeometry(QRect(460, 200, 331, 121))
+        self.label_5.setFont(font)
+        self.Paginas.addWidget(self.Turmas)
+        self.Disciplina = QWidget()
+        self.Disciplina.setObjectName(u"Disciplina")
+        self.label_6 = QLabel(self.Disciplina)
+        self.label_6.setObjectName(u"label_6")
+        self.label_6.setGeometry(QRect(220, 280, 331, 121))
+        self.label_6.setFont(font)
+        self.Paginas.addWidget(self.Disciplina)
+        self.Usuarios = QWidget()
+        self.Usuarios.setObjectName(u"Usuarios")
+        self.Paginas.addWidget(self.Usuarios)
+
+        self.horizontalLayout.addWidget(self.Paginas)
+
+
+        self.verticalLayout.addWidget(self.frame_2)
+
+        Sistema.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(Sistema)
+
+        self.Paginas.setCurrentIndex(1)
+
+
+        QMetaObject.connectSlotsByName(Sistema)
+    # setupUi
+
+    def retranslateUi(self, Sistema):
+        Sistema.setWindowTitle(QCoreApplication.translate("Sistema", u"MainWindow", None))
+        self.label.setText(QCoreApplication.translate("Sistema", u"<html><head/><body><p align=\"center\"><span style=\" font-size:28pt; font-weight:700;\">MENUS</span></p></body></html>", None))
+        self.Menu_Aluno.setText(QCoreApplication.translate("Sistema", u"ALUNO", None))
+        self.Menu_Professor.setText(QCoreApplication.translate("Sistema", u"PROFESSORES", None))
+        self.Menu_Turmas.setText(QCoreApplication.translate("Sistema", u"TURMAS", None))
+        self.Menu_Disciplina.setText(QCoreApplication.translate("Sistema", u"DISCIPLINA", None))
+        self.Menu_Usuarios.setText(QCoreApplication.translate("Sistema", u"USUARIOS", None))
+        self.label_2.setText(QCoreApplication.translate("Sistema", u"PG INICIAL", None))
+        self.label_3.setText(QCoreApplication.translate("Sistema", u"<html><head/><body><p><span style=\" font-size:26pt; font-weight:700;\">ALUNOS - LISTAR</span></p></body></html>", None))
+        ___qtablewidgetitem = self.tableWidget.horizontalHeaderItem(0)
+        ___qtablewidgetitem.setText(QCoreApplication.translate("Sistema", u"New Column", None));
+        ___qtablewidgetitem1 = self.tableWidget.horizontalHeaderItem(1)
+        ___qtablewidgetitem1.setText(QCoreApplication.translate("Sistema", u"Aluno", None));
+        ___qtablewidgetitem2 = self.tableWidget.horizontalHeaderItem(2)
+        ___qtablewidgetitem2.setText(QCoreApplication.translate("Sistema", u"Mat.", None));
+        ___qtablewidgetitem3 = self.tableWidget.horizontalHeaderItem(3)
+        ___qtablewidgetitem3.setText(QCoreApplication.translate("Sistema", u"RG", None));
+        ___qtablewidgetitem4 = self.tableWidget.horizontalHeaderItem(4)
+        ___qtablewidgetitem4.setText(QCoreApplication.translate("Sistema", u"Turma", None));
+        self.label_7.setText(QCoreApplication.translate("Sistema", u"<html><head/><body><p><span style=\" font-size:26pt; font-weight:700;\">ALUNOS - LISTAR</span></p></body></html>", None))
+        self.label_8.setText(QCoreApplication.translate("Sistema", u"<html><head/><body><p><span style=\" font-size:26pt; font-weight:700;\">ALUNOS - ATUALIZAR</span></p></body></html>", None))
+        self.label_4.setText(QCoreApplication.translate("Sistema", u"Professores Listar", None))
+        self.label_5.setText(QCoreApplication.translate("Sistema", u"Turmas", None))
+        self.label_6.setText(QCoreApplication.translate("Sistema", u"Disciplinas", None))
+    # retranslateUi
+
